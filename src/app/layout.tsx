@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { Analytics } from "@vercel/analytics/next";
 import { LOCALES } from "@/i18n/messages";
 import { LOCALE_COOKIE_KEY, LOCALE_STORAGE_KEY } from "@/i18n/routing";
 import { SEO_COPY } from "@/i18n/seo";
@@ -52,7 +53,10 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: localeBootstrapScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

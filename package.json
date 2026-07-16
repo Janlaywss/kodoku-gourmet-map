@@ -9,6 +9,7 @@
     "data:sync": "node scripts/import-google-mymaps.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "mapbox-gl": "^3.26.0",
     "next": "16.2.10",
     "react": "19.2.4",
