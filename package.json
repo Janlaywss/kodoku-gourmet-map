@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "data:sync": "node scripts/import-google-mymaps.mjs"
   },
   "dependencies": {
+    "mapbox-gl": "^3.26.0",
     "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
